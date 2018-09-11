@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <div th:replace="fragments/head :: head('Default')"></div>
 </head>
 <body>
-$END$
+
+
+
+<div th:replace="fragments/navbar :: unauthNavbar"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Hello, World!</h1>
+        </div>
+    </div>
+</div>
+
+<div th:replace="fragments/footer :: footer"></div>
+<div th:replace="fragments/scripts :: scripts"></div>
+
 </body>
 </html>
